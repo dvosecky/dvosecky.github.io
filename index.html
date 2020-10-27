@@ -6,82 +6,94 @@
 		<title>
 			Danny Vosecky
 		</title>
+		<link href="https://fonts.googleapis.com/css2?family=Abel&family=Lora&family=Montserrat&family=Nanum+Myeongjo&family=Noto+Sans+JP&family=Oxygen&family=PT+Sans&family=Raleway&family=Trispace&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<h1>Danny Vosecky</h1>
-		<p>
-			Hi, I'm Danny. I'm a web developer with training and experience in frontend and backend development.
-			I have earned certifications from 
-			<a href="https://www.freecodecamp.org/">freeCodeCamp</a>
-			in Responsive Web Design, JavaScript Algorithms and
-			Data Structures, Front End Libraries, Data Visualization, APIs and Microservices, Quality Assurance,
-			and Information Security, which cumulatively earns me the Full Stack Certification. My certifications can be
-			verified at 
-			<a href="https://www.freecodecamp.org/dvosecky" target="_blank">my freeCodeCamp profile page</a>.
-		</p>
-		<p>
-			In the course of earning these certifications, I completed over 30 projects, most of which are live and can be viewed at
-			<a href="https://codepen.io/collection/XbMyNx">my CodePen collection</a>
-			for frontend projects or at
-			<a href="https://repl.it/@dvosecky">my Repl.it profile</a>
-			for backend projects. This page contains a selection of those projects.
-		</p>
-		<h2>Projects</h2>
-		<ul>
-			<li>
-				<h3><a href="https://codepen.io/dvosecky/full/qBZyGjr" target="_blank">D3 Treemap</a></h3>
-				<p>A treemap visualization of the top 100 best-selling video games grouped by platform.</p>
-			</li>
-			<li>
-				<h3><a href="https://codepen.io/dvosecky/full/rNerjyp" target="_blank">D3 Choropleth</a></h3>
-				<p>A choropleth visualization of educational attainments in the United States.</p>
-			</li>
-			<li>
-				<h3><a href="https://codepen.io/dvosecky/full/OJNOBBO" target="_blank">Pomodoro Clock</a></h3>
-				<p>A timer that alternates between variable-length "work session" and "break" intervals.</p>
-			</li>
-			<li>
-				<h3><a href="https://codepen.io/dvosecky/full/GRZMoQZ" target="_blank">Calculator</a></h3>
-				<p>A calculator app that does correct order of operations on longer expressions.</p>
-			</li>
-			<li>
-				<h3><a href="https://codepen.io/dvosecky/full/BaKwoRe" target="_blank">Drum Machine</a></h3>
-				<p>A drum machine with samples triggered by clicks or key presses.</p>
-			</li>
-			<li>
-				<h3><a href="https://codepen.io/dvosecky/full/LYNLbjj" target="_blank">Markdown Previewer</a></h3>
-				<p>A previewer that updates in real-time as markdown is modified.</p>
-			</li>
-			<li>
-				<h3><a href="https://codepen.io/dvosecky/full/MWyeEjq" target="_blank">Random Quote Machine</a></h3>
-				<p>Displays random quotes for your inspiration.</p>
-			</li>
-			<li>
-				<h3><a href="https://codepen.io/dvosecky/full/YzybmZY" target="_blank">Personal Portfolio Page</a></h3>
-				<p>A webpage showcasing some of my first projects from the Responsive Web Design certification</p>
-			</li>
-				<li>
-					<h3><a href="https://boilerplate-project-messageboard-1.dvosecky.repl.co/" target="_blank">Anonymous Message Board</a></h3>
-					<p>Message board where users can post, report, delete, and reply to anonymous messages.</p>
-				</li>
-				<li>
-					<h3><a href="https://boilerplate-project-stockchecker.dvosecky.repl.co/" target="_blank">Stock Price Checker</a></h3>
-					<p>API for getting stock price info, and also "liking" stocks and comparing likes between stocks.</p>
-				</li>
-				<li>
-					<h3><a href="https://boilerplate-project-american-british-english-translator-1.dvosecky.repl.co/" target="_blank">
-						American/British English Translator
-					</a></h3>
-					<p>Translates between American and British phrases, spellings, titles, and time notation, and highlights translations</p>
-				</li>
-				<li>
-					<h3><a href="https://boilerplate-project-sudoku-solver.dvosecky.repl.co/" target="_blank">Sudoku Solver</a></h3>
-					<p>Solves Sudoku puzzles.</p>
-				</li>
-				<li>
-					<h3><a href="https://boilerplate-project-urlshortener.dvosecky.repl.co/" target="_blank">URL Shortener</a></h3>
-					<p>Given a URL, creates a "shortcut" URL that will redirect to the original</p>
-				</li>
-		</ul>
+		<div class="container">
+			<h1>Danny Vosecky</h1>
+			<section id="about">
+				<p>
+					Hi, I'm Danny!</p><p> I'm a web developer with training and experience in frontend and backend development.
+					I have earned certifications from 
+					<a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>
+					in Responsive Web Design, JavaScript Algorithms and
+					Data Structures, Front End Libraries, Data Visualization, APIs and Microservices, Quality Assurance,
+					and Information Security. Collectively, these fulfill freeCodeCamp's Full Stack certification. My certifications can be
+					verified at 
+					<a href="https://www.freecodecamp.org/dvosecky" target="_blank">my freeCodeCamp profile page</a>.
+				</p>
+				<p>
+					In the course of earning these certifications, I completed over 30 projects, most of which are live and can be viewed at
+					<a href="https://codepen.io/collection/XbMyNx" target="_blank">my CodePen collection</a>
+					for frontend projects or at
+					<a href="https://repl.it/@dvosecky" target="_blank">my Repl.it profile</a>
+					for backend projects. This page contains a selection of those projects.
+				</p>
+			</section>
+
+			<section id="projects">
+				<h2>~Projects~</h2>
+				<ul>
+					<li>
+						<h3><a href="https://codepen.io/dvosecky/full/qBZyGjr" target="_blank">D3 Treemap</a></h3>
+						<p class="desc">A treemap visualization of the top 100 best-selling video games grouped by platform</p>
+					</li>
+					<li>
+						<h3><a href="https://codepen.io/dvosecky/full/rNerjyp" target="_blank">D3 Choropleth</a></h3>
+						<p class="desc">A choropleth visualization of educational attainments in the United States</p>
+					</li>
+					<li>
+						<h3><a href="https://codepen.io/dvosecky/full/OJNOBBO" target="_blank">Pomodoro Clock</a></h3>
+						<p class="desc">A timer that alternates between variable-length "work session" and "break" intervals</p>
+					</li>
+					<li>
+						<h3><a href="https://codepen.io/dvosecky/full/GRZMoQZ" target="_blank">Calculator</a></h3>
+						<p class="desc">A calculator app that does correct order of operations on longer expressions</p>
+					</li>
+					<li>
+						<h3><a href="https://codepen.io/dvosecky/full/BaKwoRe" target="_blank">Drum Machine</a></h3>
+						<p class="desc">A drum machine with samples triggered by clicks or key presses</p>
+					</li>
+					<li>
+						<h3><a href="https://codepen.io/dvosecky/full/LYNLbjj" target="_blank">Markdown Previewer</a></h3>
+						<p class="desc">A previewer that updates in real-time as markdown is modified</p>
+					</li>
+					<li>
+						<h3><a href="https://codepen.io/dvosecky/full/MWyeEjq" target="_blank">Random Quote Machine</a></h3>
+						<p class="desc">Displays random quotes for your inspiration</p>
+					</li>
+					<li>
+						<h3><a href="https://codepen.io/dvosecky/full/YzybmZY" target="_blank">Personal Portfolio Page</a></h3>
+						<p class="desc">A webpage showcasing some of my first projects from the Responsive Web Design certification</p>
+					</li>
+					<li>
+						<h3><a href="https://boilerplate-project-messageboard-1.dvosecky.repl.co/" target="_blank">Anonymous Message Board</a></h3>
+						<p class="desc">Message board where users can post, report, delete, and reply to anonymous messages</p>
+					</li>
+					<li>
+						<h3><a href="https://boilerplate-project-stockchecker.dvosecky.repl.co/" target="_blank">Stock Price Checker</a></h3>
+						<p class="desc">API for getting stock price info, and also "liking" stocks and comparing likes between stocks</p>
+					</li>
+					<li>
+						<h3><a href="https://boilerplate-project-american-british-english-translator-1.dvosecky.repl.co/" target="_blank">
+							American/British English Translator
+						</a></h3>
+						<p class="desc">Translates between American and British phrases, spellings, titles, and time notation, and highlights translations</p>
+					</li>
+					<li>
+						<h3><a href="https://boilerplate-project-sudoku-solver.dvosecky.repl.co/" target="_blank">Sudoku Solver</a></h3>
+						<p class="desc">Finds solutions to Sudoku</p>
+					</li>
+					<li>
+						<h3><a href="https://boilerplate-project-urlshortener.dvosecky.repl.co/" target="_blank">URL Shortener</a></h3>
+						<p class="desc">Given a URL, creates a "shortcut" URL that will redirect to the original</p>
+					</li>
+				</ul>
+			</section>
+			<footer>
+				© 2020 Danny Vosecky
+			</footer>
+		</div>
 	</body>
 </html>
