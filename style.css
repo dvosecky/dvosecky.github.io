@@ -1,3 +1,4 @@
+/* General */
 :root {
 	--header-footer-bg: #000;
 	--header-footer-text: #fff;
@@ -5,10 +6,9 @@
 
 body {
 	margin: 0;
-	background-color: #88a;
+	background-color: #899;
 	font: 1.1rem 'Cabin', sans-serif;
 }
-
 
 p {
 	line-height: 1.5;
@@ -23,25 +23,11 @@ a:hover {
 	text-decoration: underline;
 }
 
-ul {
-	margin: 0;
-	padding: 0;
-}
-
-li {
-	list-style: none;
-}
-
-
-section h2 {
-	text-align: center;
-	margin: 0 0 1rem;
-	font-size: 2rem;
-}
-
-.project h3 {
-	margin: 0 0 0.3rem;
-	text-align: center;
+.container {
+	max-width: 1200px;
+	margin: auto;
+	background-color: #fff;
+	border: 2px solid var(--header-footer-bg);
 }
 
 header {
@@ -49,50 +35,64 @@ header {
 	background-color: var(--header-footer-bg);
 }
 
-header h1 {
+footer {
+	padding: 13px;
+	text-align: center;
+	font-size: 0.9rem;
 	color: var(--header-footer-text);
-	font-family: 'Sacramento', sans-serif;
-	font-size: 3rem;
+	background-color: var(--header-footer-bg);
+}
+
+h1 {
 	margin: 0;
+	font: 700 3rem 'Sacramento', sans-serif;
+	text-align: center;
+	color: var(--header-footer-text);
+}
+
+h2 {
+	margin: 0 0 0.5rem;
+	font-size: 2rem;
+	text-align: center;
+}
+
+h3 {
+	margin: 0 0 0.3rem;
+	font-size: 1.4rem;
 	text-align: center;
 }
 
 section {
-	padding: 20px 25px 0px;
-}
-
-
-.container {
-	max-width: 1000px;
-	margin: auto;
-	background-color: #fff;
-	border: 2px solid var(--header-footer-bg);
+	padding: 20px 25px 0;
 }
 
 .project-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 0 0 20px;
+	justify-content: center;
 }
 
 .project {
 	margin: 0 0 20px;
-	flex: 0 0 48.5%;
-	text-align: center;
+	flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+	.project-container {
+		justify-content: space-between;
+	}
+
+	.project {
+		flex: 0 0 48.5%;
+	}
 }
 
 .project-link {
 	display: block;
-	margin: auto;
-	width: 100%;
 }
 
 .img-container {
 	position: relative;
-	margin: auto;
-	width: 100%;
-	box-sizing: border-box;
 	border: 2px solid #000;
 }
 
@@ -108,17 +108,5 @@ section {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(#0044, #0044);
-}
-
-.project p {
-	margin: 0;
-}
-
-footer {
-	padding: 13px;
-	text-align: center;
-	font-size: 0.9rem;
-	color: var(--header-footer-text);
-	background-color: var(--header-footer-bg);
+	background: linear-gradient(#0002, #0002);
 }
